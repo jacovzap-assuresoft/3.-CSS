@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pencil {
+    display: flex;
+    align-items: center;
+    animation: spin 3s linear infinite;
+}
+
+.height-border{
+    height: 5rem;
+    border: 1px solid black;
+}
+
+.eraser {
+    background-color: pink;
+    width: 5rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.ferrule {
+    background-color: gainsboro;
+    width: 5rem;
+}
+
+.barrel {
+    background-color: yellow;
+    width: 30rem;
+}
+
+.chopped-part {
+    width: 0;
+    height: 5rem;
+    border-top: 1.5rem solid transparent;
+    border-bottom: 1.5rem solid transparent;
+    border-left: 4rem solid blanchedalmond;
+}
+
+.point {
+    width: 0;
+    height: 0;
+
+    border-top: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+    border-left: 2rem solid black;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
